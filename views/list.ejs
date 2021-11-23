@@ -55,8 +55,10 @@
 
     <!-- LIST -->
     <div>
-      <h4>Todo Title : <%= %></h4>
-      <h4>Todo Detail :</h4>
+      <% for (let i = 0; i < post.length; i++){ %>
+      <h4>Todo Title : <%= post[i].title %></h4>
+      <h4>Todo Detail : <%= post[i].detail %></h4>
+      <% } %>
     </div>
   </body>
 </html>
